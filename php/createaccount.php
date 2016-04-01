@@ -11,13 +11,13 @@ $hash = password_hash($_POST["myPass"], PASSWORD_BCRYPT);
 $link=mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME)
   or die("Failed to connect to MySQL:");
 
-//escaped inputs to avoid sql injection
-//$user = mysqli_real_escape_string($link, $_POST["myUser"]);
-//$email = mysqli_real_escape_string($link, $_POST["myEmail"]);
+//escape inputs to avoid sql injection
+$user = mysqli_real_escape_string($link, $_POST["myUser"]);
+$email = mysqli_real_escape_string($link, $_POST["myEmail"]);
 
 //adds created user data into database
 $sql = "INSERT INTO `info`(`username`, `password`, `email`) VALUES
-  ('$_POST[myUser]', '$hash', '$_POST[myEmail]')";
+  ('$user', '$hash', '$email'";
 
 $query = mysqli_query($link,$sql) or die("Cannot retrieve data");
 
@@ -28,5 +28,5 @@ if ($query) {
   header("location:createaccountPage.php");
 }
 
-//mysql_close() or die("Failed to close mysql connection");
+mysql_close() or die("Failed to close mysql connection");
 ?>

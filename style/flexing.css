@@ -1,0 +1,30 @@
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+.createIn {
+  margin-right: 10px;
+}
+
+.errors {
+  flex-flow:column;
+}
+
+.flex-user {
+  margin-bottom: 10px;
+}
+
+.flex-email {
+  margin-bottom: 10px;
+}
+
+.flex-pass {
+  margin-bottom:10px;
+}
+
+.flex-repass {
+  margin-bottom:10px
+}

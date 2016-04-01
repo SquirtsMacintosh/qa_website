@@ -1,0 +1,17 @@
+{ "Quiz_name": {
+  "qTitle":"My First Quiz",
+  "question1": {
+      "q": "How much wood can a wood chuck chuck",
+      "a": "4",
+      "b": "2",
+      "c": "1",
+      "d": "3"
+  },
+  "question2": {
+    "q": "How many planets are there?",
+    "a": "3",
+    "b": "1 million",
+    "c": "10",
+    "d": "20m"
+  }}
+}

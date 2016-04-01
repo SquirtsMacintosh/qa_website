@@ -1,0 +1,20 @@
+body {
+  background-color: #757375;
+}
+
+.nav.nav-stacked li a {
+  color: black;
+}
+
+.nav.nav-stacked li {
+  background: #ffffff;
+}
+
+.nav.nav-stacked li a.active {
+  background: #F2999A;
+}
+
+.nav.nav-stacked li a:hover:not(.active) {
+  background-color: #555;
+  color:white;
+}

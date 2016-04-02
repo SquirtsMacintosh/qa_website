@@ -26,7 +26,7 @@
     </div>
     <div class="row">
       <div class="container-fluid">
-        <ul class ="nav nav-stacked col-lg-2 col-md-2 col-sm-2">
+        <ul class ="nav nav-stacked col-lg-2 col-md-2 col-sm-2" id="please">
           <li role="presentation"><a class="active" href="../mainPage.php">Main</a></li>
           <li role="presentation"><a href="../teachertools/quizPage.php">Add Quizzes</a></li>
           <li role="presentation"><a href="../teachertools/gradebookPage.php">Quiz Gradebook</a></li>

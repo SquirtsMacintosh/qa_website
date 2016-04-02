@@ -25,8 +25,7 @@ if (password_verify($_POST['myPassword'], $hash)) {
   header("location:../mainPage.php");
   die();
 } else {
-  // will need to comment out and let js worry about this
-  echo "$user";
+  header("location:../loginPage.php")
 }
 
 mysqli_close($link) or die("Failed to close the database connection!");
